@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиК|Крокодилы и Канализации</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.dom.min.js"></script> -->
+</head>
+<body>
+    <div class="fadeMe"></div>
+    <header class="main-header">
+        <div class="header-content">
+            <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <div class="header-right">
+            <div class="search-container">
+                <form action="" onsubmit="changeLoc();return false">
+                    <input type="text" placeholder="Поиск..." name="search" class="loc-input">
+                </form>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <a href="#" data-dropdown-button>Музыка</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>
+                        <label for="range">Громкость</label>
+                        <input type="range" min="0" max="100" step="0.1" class="volume-slider">
+                         </li>
+                         <li>
+                        <label for="checkbox">Отключить звук</label>
+                        <input type="checkbox" class="muteButton" onchange="toggleMute()" checked>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <a href="#" data-dropdown-button>Иллюстрация</a>
+                <div class="dropdown-menu">
+                        <ul>
+                            <li> 
+                        <label for="range">Размер</label>
+                        <input type="range" value="50" min="20" max="70" step="1" class="art-height-slider">
+                            </li>
+                        <li>
+                            <label for="checkbox">Автоувеличение</label>
+                        <input type="checkbox" class="fullScreenButton" onchange='toggleFullScreen()' checked>
+                    </li>
+                        <li><label for="checkbox">Epic Mode</label>
+                        <input type="checkbox" class="epicArtButton" onchange='toggleEpicArt()'>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <a href="#" data-dropdown-button>О проекте</a>
+                <div class="dropdown-menu">
+                    <p>Данный проект создан для игры в КиК в компании. Приятного пользования!</p>
+                </div>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <a href="#" data-dropdown-button class="adv-list-nofade"><button class="book-button glow" data-dropdown-button>ПРИКЛЮЧЕНИЯ</button></a>
+            <div class="dropdown-menu adv-list"></div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="slides-section">
+        <!-- <form onsubmit="changeLoc();return false" class="form">
+            <div class="location-form">
+                <span class="form-control-wrap">
+                    <input type="text" name="Локация" size="40" class="form-control" placeholder="Введите локацию">
+                </span>
+                <button type="submit" class="form-control submit"> <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </form> -->
+            <h1 class="title">Добро пожаловать в КиК!</h1>
+        <div class="art-container">
+            <img class="art" src="default.jpg" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-list">
+        <ul>
+            <li><a href="https://vk.com/kroikan">Архив</a></li>
+            <li><a href="https://vk.com/karasevvv98">Разработчик</a></li>
+            <li><a href="https://vk.com/id456016692">Автор лого</a></li>
+            <li><a href="https://vk.com/patrickocean">Никита Сеник</a></li>
+        </ul>
+    </div>
+    <h3>Крокодилы и Канализации©</h3>
+    </footer>
+
+    <audio src="злой_замок.mp3" volume='0.5' loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
